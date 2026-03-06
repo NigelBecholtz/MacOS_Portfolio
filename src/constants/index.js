@@ -77,25 +77,24 @@ const dockApps = [
 const blogPosts = [
   {
     id: 1,
-    date: "Sep 2, 2025",
-    title:
-      "Why Backend Development Matters: Building the Systems Behind Modern Applications",
+    date: "Mar 1, 2025",
+    title: "Building a 3D Portfolio with React, Vite, and GSAP",
     image: "/images/blog1.png",
-    link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+    link: "https://gsap.com/docs/v3/",
   },
   {
     id: 2,
-    date: "Aug 28, 2025",
-    title: "Getting Started with Node.js: Building Fast and Scalable APIs",
+    date: "Feb 22, 2025",
+    title: "TypeScript Tips for Cleaner, Safer React Code",
     image: "/images/blog2.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+    link: "https://react.dev/learn/typescript",
   },
   {
     id: 3,
-    date: "Aug 15, 2025",
-    title: "Working with Databases in Web Applications: MySQL and MongoDB Basics",
+    date: "Feb 15, 2025",
+    title: "REST APIs with Node.js and Express: A Practical Guide",
     image: "/images/blog3.png",
-    link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+    link: "https://expressjs.com/en/guide/routing.html",
   },
 ];
 
@@ -188,19 +187,19 @@ const photosLinks = [
 const gallery = [
   {
     id: 1,
-    img: "/images/gal1.png",
+    img: "/images/gal1.jpeg",
   },
   {
     id: 2,
-    img: "/images/gal2.png",
+    img: "/images/gal2.jpeg",
   },
   {
     id: 3,
-    img: "/images/gal3.png",
+    img: "/images/gal3.jpeg",
   },
   {
     id: 4,
-    img: "/images/gal4.png",
+    img: "/images/gal4.jpeg",
   },
 ];
 
@@ -224,7 +223,7 @@ const WORK_LOCATION = {
   children: [
     {
       id: 5,
-      name: "Language Learning Application",
+      name: "E-Learning Platform",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-5",
@@ -238,10 +237,10 @@ const WORK_LOCATION = {
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "This project is a language learning application designed to help users practice vocabulary and improve language skills.",
-            "The platform focuses on a simple and efficient learning experience, allowing users to quickly review words and track their progress.",
-            "The backend was built with Node.js and designed to handle multiple users and learning sessions efficiently.",
-            "The goal of the project was to experiment with backend architecture, databases, and scalable API design.",
+            "This project is an e-learning platform for organizations to deliver compliance and professional training through curricula, video modules, and assessments.",
+            "The platform provides role-based dashboards, multi-language content (14 languages via DeepL), and integration with external systems for user and organization sync.",
+            "The backend was built with Laravel (PHP 8.2) and Inertia.js with React for the frontend, designed to handle curricula, trainings, assessments, certificates, and video progress tracking.",
+            "The goal of the project was to build a scalable learning management system with API-first design, multi-tenancy for organizations, and multi-language content workflows.",
           ],
         },
       ],
@@ -249,7 +248,7 @@ const WORK_LOCATION = {
 
     {
       id: 6,
-      name: "FiveM Server Infrastructure",
+      name: "Survey Platform",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-52 right-80",
@@ -257,16 +256,16 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "server-project.txt",
+          name: "project-description.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 right-10",
           description: [
-            "This project focuses on setting up and managing a FiveM FXServer on a Linux VPS.",
-            "The server hosts multiple resources and scripts to create a custom multiplayer environment.",
-            "The infrastructure includes database integration, server configuration, and deployment automation.",
-            "This project helped improve my understanding of server environments, Linux systems, and backend performance.",
+            "This project is a survey platform for organizations to create and publish questionnaires, collect responses, and deliver score-based advice to respondents.",
+            "The platform provides multi-language surveys (16 languages via UI strings), configurable email notifications (completion alerts and respondent summary emails with advice), and optional audience-based scoring and advice.",
+            "The backend was built with Laravel (PHP) and a React frontend, and supports surveys with multiple question types (single/multiple choice, scale, open text), score ranges, SMTP configuration per survey or company, and public submission by link or token.",
+            "The goal of the project was to build a scalable survey and feedback system with company multi-tenancy, translatable content and UI, and email workflows for both internal notifications and respondent summaries (including spam-folder guidance).",
           ],
         },
       ],
@@ -274,7 +273,7 @@ const WORK_LOCATION = {
 
     {
       id: 7,
-      name: "Portfolio Website",
+      name: "Member Management System",
       icon: "/images/folder.png",
       kind: "folder",
       position: "top-10 left-80",
@@ -282,16 +281,17 @@ const WORK_LOCATION = {
       children: [
         {
           id: 1,
-          name: "portfolio-project.txt",
+          name: "project-description.txt",
           icon: "/images/txt.png",
           kind: "file",
           fileType: "txt",
           position: "top-5 left-10",
           description: [
-            "This portfolio website showcases my projects, skills, and development experience.",
-            "The goal of the project is to present my work in a clear and interactive way.",
-            "It highlights backend development projects and technical experiments I have built during my studies.",
-            "The portfolio also serves as a learning project where I experiment with new technologies and UI concepts.",
+            "This project is a member management system for CEPI (Confederation of European Paper Industries) for organisations to manage their members, import and export member data, and verify membership via a REST API.",
+            "The platform offers CSV and Excel import and export (with PhpSpreadsheet), sync-based updates from imported files, and a check-member API endpoint for email-based membership lookup with configurable rate limiting per API key.",
+            "The backend is built with Laravel 12 (PHP 8.2+) and a Blade-based frontend with Tailwind CSS 4 and Vite 7, using MySQL (or SQLite) as the default database.",
+            "The system supports organisation-level multi-tenancy, activity logging for audits, AES-256-GCM-encrypted storage of member emails, and an admin panel for organisations, accounts, and API key management.",
+            "The goal was to build a scalable, privacy-conscious membership system with secure API access, file-based data exchange, and clear separation between organisation users and admin users.",
           ],
         },
       ],
@@ -326,12 +326,12 @@ const ABOUT_LOCATION = {
     },
     {
       id: 3,
-      name: "conference-me.png",
+      name: "casual-me(1).png",
       icon: "/images/image.png",
       kind: "file",
       fileType: "img",
       position: "top-52 left-80",
-      imageUrl: "/images/adrian-3.jpeg",
+      imageUrl: "/images/gal1.jpeg",
     },
     {
       id: 4,
