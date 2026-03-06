@@ -14,6 +14,7 @@ const Dock = () => {
         setReady(true);
     }, []);
 
+    
     useGSAP(() => {
         const dock = dockRef.current;
         if (!dock) return;
